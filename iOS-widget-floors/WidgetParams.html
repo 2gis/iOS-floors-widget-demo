@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+		<style>
+			html, body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+	<script charset="utf-8" src="https://floors-widget.api.2gis.ru/loader.js" id="dg-floors-widget-loader"></script>
+	<script charset="utf-8">
+		const widget = DG.FloorsWidget.init({
+			width: '100%',
+			height: '100%',
+			initData: {
+				complexId: '13933647002593772',
+				options: {
+					initialFirm: 'INITIAL_FIRM_ID',
+					hideSearchPanel: true,
+					hideCopyright: true
+				}
+			}
+		});
+		widget.on('click', (event) => {
+			webkit.messageHandlers.clickListener.postMessage(event.firmIds);
+		});
+	</script>
+
+	</body>
+</html>
