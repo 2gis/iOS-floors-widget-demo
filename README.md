@@ -1,1 +1,1 @@
-# iOS-floors-widget-demo
+# Floors widget DEMO
