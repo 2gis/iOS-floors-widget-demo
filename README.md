@@ -1,10 +1,10 @@
 # Floors widget DEMO
 
-You should set apikey in your Info.plist file to be able show title in card on pin tapped. You can get it from api@2gis.ru
+You should set apikey in your Info.plist file to be able to show title in card after a pin is selected. You can get it from api@2gis.ru
 
 ```
-	<key>Catalog Api Key</key>
-	<string>your_key</string>
+<key>Catalog Api Key</key>
+<string>your_key</string>
 ```
 
 ## Images
