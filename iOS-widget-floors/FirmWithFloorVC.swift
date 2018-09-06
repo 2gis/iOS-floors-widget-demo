@@ -15,6 +15,7 @@ internal class FirmWithFloorVC: UIViewController, WKUIDelegate, WKScriptMessageH
 
 		let view = WKWebView(frame: .zero, configuration: webConfiguration)
 		view.uiDelegate = self
+		view.scrollView.showsVerticalScrollIndicator = false
 
 		return view
 	}()
